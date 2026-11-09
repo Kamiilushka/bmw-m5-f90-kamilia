@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M5 F90</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- начало шапки -->
+    <header>
+        <div class="header-block container">
+            <div class="nav">
+                <a href="#1">О модели</a>
+                <a href="#2">Преимущества</a>
+            </div>
+
+            <div class="logo" >
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+            </div>
+
+            <div class="nav">
+                <a href="#3">Палитра</a>
+                <a href="#5">Комплектация</a>
+            </div>
+        </div>
+    </header>
+    <!-- конец шапки -->
+
+
+    <!-- начало баннера -->
+    <main>
+        <video autoplay muted loop playsinline>
+            <source src="video/video.mp4">
+        </video>
+    </main>
+    <!-- конец баннера -->
+
+
+    <!-- начало о модели  -->
+    <div class="model container" id="1">
+        <h1>Bmw m5 f90</h1>
+
+        <div class="model-text">
+            <h2>Бескомпромиссная динамика в бизнес-классе</h2>
+            <div class="poloca">
+                <hr>
+            </div>
+            <p>BMW M5 F90 — это идеальный баланс между роскошью, комфортом и гоночными технологиями. Седан, который
+                объединяет характер спорткара и практичность для повседневной жизни.</p>
+        </div>
+
+        <div class="model-img">
+            <img src="img/car.png" alt="">
+        </div>
+    </div>
+    <!-- конец о модели  -->
+
+
+    <!-- начало преимущества  -->
+    <section>
+        <div class="section-block container" id="2">
+            <div class="section-kard">
+                <div class="one">
+
+                    <div class="foto">
+                        <img src="img/салон.png" alt="" >
+                        <h3>Комфортный салон</h3>
+                    </div>
+
+                    <div class="optika">
+                        <img src="img/оптика.png" alt="">
+                        <h3>Led оптика</h3>
+                    </div>
+
+                </div>
+
+                <div class="two">
+                    <div class="text">
+                        <h2>Главные преимущества</h2>
+                    </div>
+                    <div class="foto">
+                        <img src="img/подвеска.png" alt="">
+                        <h3>Адаптивная подвеска</h3>
+                    </div>
+
+                    <div class="foto">
+                        <img src="img/система.png" alt="">
+                        <h3>Выхлопная система</h3>
+                    </div>
+
+                </div>
+
+                <div class="three">
+
+                    <div class="foto">
+                        <img src="img/двигатель.png" alt="">
+                        <h3>Двигатель V8</h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="red">
+                <img src="img/red.png" alt="">
+            </div>
+
+            <div class="cem">
+                <div class="komfort">Премиальный салон, который сочетает в себе роскошь, удобство и современные решения.
+                </div>
+                <div class="led">Обеспечивает отличную видимость в темное время суток и подчеркивает агрессивный дизайн
+                    автомобиля.</div>
+                <div class="podveska">Идеальная управляемость в любых условиях - от городских улиц до активного драйва.
+                </div>
+                <div class="vihlop">Глубокий, насыщенный звук, который подчеркивает характер автомобиля.</div>
+                <div class="v8">4.4-литровый битурбированный двигатель подарит невероятную динамику и эмоции</div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- конец преимущества -->
+
+    <!-- начало палитры -->
+    <div class="palitra container" id="3">
+        <div class="palitra-block">
+            <div class="palitra-text">
+                <h2>Цветовая палитра</h2>
+            </div>
+            <div class="palitra-img">
+                <img src="img/blackblCK.png" alt="" class="img1 main-car" id="bigCar">
+            </div>
+            <div class="mashine">
+                <img src="img/blackblCK.png" alt="" class="small-car active" onclick="imgSlider('img/blackblCK.png')">
+
+                <img src="img/Isle_of_Man_Green-Photoroom.png" alt=""  class="small-car active"
+                    onclick="imgSlider('img/Isle_of_Man_Green-Photoroom.png')">
+
+                <img src="img/Brands_Hatch_Grey-Photoroom.png" alt=""     class="small-car active"
+                    onclick="imgSlider('img/Brands_Hatch_Grey-Photoroom.png')">
+
+                <img src="img/Marina_Bay_Blue-Photoroom.png" alt="" class="small-car active"
+                    onclick="imgSlider('img/Marina_Bay_Blue-Photoroom.png')">
+            </div>
+        </div>
+    </div>
+    <!-- конец палитры  -->
+
+    <!-- начало истории -->
+    <div class="history" id="4">
+        <div class="history-block container">
+            <div class="history-text">
+                <div class="zagolovok">
+                    <h2>История</h2>
+                    <h2>m5 f90</h2>
+                </div>
+                <p>Поколение , которое объединило гоночное наследие и современные технологии</p>
+            </div>
+            <div class="goda">
+                <hr>
+            </div>
+            <div class="gora">
+                <div class="cola">
+                    <div class="data">
+                        <h3>2017</h3>
+                        <h4>Презентация</h4>
+                    </div>
+                    <p>Официальный дебют BMW M5 F90 на автосалоне во Франкфурте. Модель получила новый 4,4-литровый V8 и
+                        мощностью 600 л.с с двумя турбинами и полный привод M xDrive.</p>
+                </div>
+                <div class="cola">
+                    <div class="data">
+                        <h3>2018</h3>
+                        <h4>Полный привод хDRIVE</h4>
+                    </div>
+                    <p>В 2018 году Представлена версия Competition с увеличенной мощностью до 625 л. с., более
+                        спортивными настройками и разгоном до 100 км/ч за 3,3 секунды.</p>
+                </div>
+                <div class="cola">
+                    <div class="data">
+                        <h3>2020+</h3>
+                        <h4>Эволюция</h4>
+                    </div>
+                    <p>В 2020 году модель получила обновления, улучшенную динамику и доработанную подвеску. BMW M5 F90
+                        по-прежнему остаётся эталоном среди спортивных седано</p>
+                </div>
+            </div>
+            <div class="kvadrat">
+                <div class="odin"></div>
+                <div class="dva"></div>
+                <div class="tre"></div>
+            </div>
+        </div>
+    </div>
+    <!-- конец истории -->
+
+
+    <!-- начало комплектации -->
+    <article>
+        <div class="article-block container" id="5">
+            <div class="article-text">
+                <h2>Комплектация</h2>
+                <h3>Технические характеристики</h3>
+            </div>
+            <img src="img/7.png" alt="">
+            <div class="krygi">
+
+                <div class="kryg1">
+                    <div class="opisn">
+                        <h2>Мощность</h2>
+                        <h3>625 Л.С</h3>
+                    </div>
+                </div>
+
+                <div class="kryg2">
+                    <div class="opisn2">
+                        <h2>Двигатель 4.4L V8</h2>
+                        <h3>Twin Turbo</h3>
+                    </div>
+                </div>
+
+                <div class="kryg3">
+                    <div class="opisn3">
+                        <h2>Крутящий момент</h2>
+                        <h3>750 Нм</h3>
+                    </div>
+                </div>
+
+                <div class="kryg4">
+                    <div class="opisn4">
+                        <h2>Коробка 8-ст. АКПП</h2>
+                        <h3>M Steptronic</h3>
+                    </div>
+                </div>
+
+                <div class="kryg5">
+                    <div class="opisn5">
+                        <h2>Передний бампер</h2>
+                        <h3>M Aerodynamic Package</h3>
+                    </div>
+                </div>
+
+                <div class="kryg6">
+                    <div class="opisn6">
+                        <h2>Передние тормоза</h2>
+                        <h3>M Sport Brakes</h3>
+                    </div>
+                </div>
+
+                <div class="kryg7">
+                    <div class="opisn7">
+                        <h2>Колёсные диски</h2>
+                        <h3>M Light Alloy Wheels</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="haracter">
+                <div class="voda">
+                    <h4>base</h4>
+                    <div class="activ">
+                        <h4>compettion</h4>
+                    </div>
+                    <h4>m5 cs</h4>
+                </div>
+
+                <div class="tea">
+                    <div class="alin">
+                        <p>Двигатель</p>
+                        <p>Мощность</p>
+                        <p>Крутящий момент</p>
+                        <p>Коробка передач</p>
+                        <p>Привод</p>
+                        <p>Разгон 0-100 км/ч</p>
+                        <p>Макс. скорость</p>
+                    </div>
+
+                    <div class="kat">
+                        <p>4.4 л V8 TwinPower Turbo</p>
+                        <p>600 л.с.</p>
+                        <p>750 Н·м</p>
+                        <p>8-ступенчатая M Steptronic</p>
+                        <p>M xDrive</p>
+                        <p>3,4 секунды</p>
+                        <p>250 км/ч</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- конец комплектации -->
+
+    <!-- начало вопросы -->
+    <div class="voprosi container" id="6">
+        <div class="start">
+            <h2>bmw m5 f90</h2>
+            <div class="pol"></div>
+            <h3>Консультация</h3>
+        </div>
+
+        <div class="krem">
+            <div class="colona">
+                <div class="vopros-text">
+                    <div class="nazvanie">
+                        <h2>Остались</h2>
+                        <h3>Вопросы?</h3>
+                    </div>
+                    <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Ваше имя"><br>
+                    <input type="text" placeholder="Телефон"><br>
+                    <textarea placeholder="Сообщение"></textarea><br>
+                    <input type="checkbox">
+
+                    <label>Я согласен(на) с <a href="document/politica.docx">политикой конфиденциальности</a> и даю
+                        согласие на <a href="document/soglashenie.docx">обработку персональных данных.</a></label><br>
+
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+
+            <div class="slovo">
+                <div class="bm">
+                    <img src="img/красный.png" alt="" >
+                </div>
+                <div class="kontact">
+                    <h3>Или свяжитесь с нами напрямую </h3>
+                    <div class="phone">
+                        <img src="img/tel.png" alt="">
+                        <a href="tel:+7(967)777-52-52">+7 (967) 777-52-52</a>
+                    </div>
+                    <div class="mail">
+                        <img src="img/mail.png" alt="">
+                        <a href="mailto:BMW_OFFICIAL@mail.ru">BMW_OFFICIAL@mail.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- конец вопросы -->
+
+
+    <!-- начало подвала -->
+    <footer class="container">
+        <div class="footer-block">
+            <div class="logo2">
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+            </div>
+
+            <div class="navig">
+                <h2>Навигация</h2>
+                <a href="#1">О модели</a>
+                <a href="#2">Преимущества</a>
+                <a href="#3">Палитра</a>
+                <a href="#4">История создания</a>
+                <a href="#5">Комплектация</a>
+                <a href="#6">Обратная связь</a>
+            </div>
+
+            <div class="svaz">
+                <h2>Контакты</h2>
+                <div class="phone2">
+                    <img src="img/tel.png" alt="" >
+                    <a href="tel:+7(967)777-52-52">+7 (967) 777-52-52</a>
+                </div>
+                <div class="mail2">
+                    <img src="img/mail.png" alt="">
+                    <a href="mailto:BMW_OFFICIAL@mail.ru">BMW_OFFICIAL@mail.ru</a>
+                </div>
+            </div>
+
+            <div class="sot-seti">
+                <h2>Мы в соцсетях</h2>
+                <div class="seti">
+                    <a href="https://web.max.ru"><img src="img/max.png" alt=""></a>
+                    <a href="https://vk.ru/feed"><img src="img/vk.png" alt=""></a>
+                    <a href="https://ru.pinterest.com"><img src="img/pinterest.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-konec">
+            <p>© BMW M5 F90, 2026. Все правы защищены</p>
+            <div class="kok">
+                <p>Разработала:</p>
+                <p>Гайнутдинова Камиля, 326 ВЕБ</p>
+            </div>
+        </div>
+    </footer>
+    <!-- конец подвала -->
+
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.img1').src = anything;
+
+            let smallCars = document.querySelectorAll('.small-car');
+
+            smallCars.forEach(car => car.classList.remove('active'));
+
+            event.target.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>

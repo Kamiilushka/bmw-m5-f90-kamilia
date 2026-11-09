@@ -1,0 +1,1096 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+@font-face {
+    font-family: 'Russo one';
+    src: url(../fonts/RussoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'M Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montseratt';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Orbitron bold';
+    src: url(../fonts/Orbitron-Bold.ttf);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+body {
+    background-color: #050505;
+}
+
+/* начало шапки */
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 8px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.275);
+    backdrop-filter: blur(10px); 
+    border-radius: 50px;
+    transform: translateX(-50%);
+}
+
+.nav a {
+    font-family: 'Russo one';
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.logo img {
+    width: 174px;
+}
+
+/* конец шапки */
+
+
+/* начало баннера  */
+video {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+}
+
+/* конец баннера */
+
+
+/* начало о модели */
+.model {
+    padding-top: 180px;
+}
+
+.model h1 {
+    color: #F7F5F5;
+    font-family: 'Russo one';
+    transform: scaleY(2.3);
+    text-transform: uppercase;
+    font-size: 170px;
+}
+
+.model-text {
+    width: 490px;
+    padding-top: 150px;
+}
+
+.model-text h2 {
+    font-family: 'M Bold';
+    font-size: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 400px;
+}
+
+.model-text p {
+    font-family: 'Montseratt';
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.poloca hr {
+    width: 62px;
+    margin: 33px 0;
+}
+
+.model-img {
+    position: relative;
+}
+
+.model-img img {
+    position: absolute;
+    top: -850px;
+    left: 300px;
+    width: 1150px;
+}
+
+
+
+/* конец о модели */
+
+
+/* начало преимущества */
+.section-kard {
+    padding-top: 180px;
+    color: #D3CBCB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto {
+    width: 420px;
+    height: 345px;
+    border: 1px solid #5A5A5A;
+    font-family: 'Russo one';
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #D3CBCB;
+}
+
+.foto img {
+    width: 395px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.optika {
+    width: 420px;
+    height: 537px;
+    border: 1px solid #5A5A5A;
+    font-family: 'Russo one';
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #D3CBCB;
+    
+}
+
+
+
+.optika img {
+    width: 390px;
+    margin: 0 auto;
+}
+
+.one,
+.two,
+.three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.two {
+    margin-top: 102px;
+}
+
+.three {
+    margin-top: 290px;
+}
+
+.text {
+    position: relative;
+}
+
+.text h2 {
+    font-family: 'Russo one';
+    color: #EDECEC;
+    font-size: 50px;
+    transform: scaleY(2);
+    position: absolute;
+    text-transform: uppercase;
+    width: 1000px;
+    bottom: 10px;
+}
+
+.foto h3,
+.optika h3 {
+    border-left: 1px solid #E10600;
+    padding: 8px 10px;
+     margin-left:18px;
+   
+}
+
+.red {
+    position: relative;
+}
+
+.red img {
+    position: absolute;
+    width: 1300px;
+    height: 1900px;
+    bottom: -450px;
+    left: -50px;
+    z-index: -1;
+}
+
+
+.cem {
+    position: relative;
+}
+
+.komfort {
+    position: absolute;
+    bottom: 557px;
+    width: 420px;
+    height: 345px;
+    border: 1px solid #5A5A5A;
+    font-family: 'Montseratt';
+    font-size: 18px;
+    display: flex;
+    background-color: #050505d2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dcd3d3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.komfort:hover {
+    opacity: 1;
+}
+
+.podveska {
+    position: absolute;
+    bottom: 435px;
+    left:440px ;
+    width: 420px;
+    height: 345px;
+    border: 1px solid #5A5A5A;
+    font-family: 'Montseratt';
+    font-size: 18px;
+    display: flex;
+    background-color: #050505d2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dcd3d3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.podveska:hover {
+    opacity: 1;
+}
+
+.vihlop {
+    position: absolute;
+    bottom: 70px;
+    left:440px ;
+    width: 420px;
+    height: 345px;
+    border: 1px solid #5A5A5A;
+    font-family: 'Montseratt';
+    font-size: 18px;
+    display: flex;
+    background-color: #050505d2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dcd3d3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.vihlop:hover {
+    opacity: 1;
+}
+
+.v8 {
+    position: absolute;
+    bottom: 267px;
+    left:880px ;
+    width: 420px;
+    height: 345px;
+    border: 1px solid #5A5A5A;
+    font-family: 'Montseratt';
+    font-size: 18px;
+    display: flex;
+    background-color: #050505d2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dcd3d3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.v8:hover {
+    opacity: 1;
+}
+
+.led {
+    position: absolute;
+    bottom: 1px;
+    width: 420px;
+    height: 537px;
+    border: 1px solid #5A5A5A;
+    font-family: 'Montseratt';
+    font-size: 18px;
+    display: flex;
+    background-color: #050505d2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dcd3d3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.led:hover {
+    opacity: 1;
+}
+
+/* конец преимущества */
+
+
+/* начало палитры */
+.palitra-block {
+    margin-top: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.palitra-text h2 {
+    color: #EDECEC;
+    font-family: 'Russo one';
+    transform: scaleY(3.2);
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+.palitra-img {
+    position: relative;
+}
+
+.palitra-img img {
+    width: 1300px;
+}
+
+.mashine {
+    display: flex;
+    gap: 47px;
+    cursor: pointer;
+}
+
+.mashine img {
+    padding-top: 76px;
+    width: 200px;
+}
+
+/* конец палитры */
+
+/* начало истории */
+.history {
+    margin-top: 80px;
+    background: url(../img/rrr.png) center no-repeat;
+    width: 100%;
+    height: 1300px;
+}
+
+.history-text {
+    width: 652px;
+    padding-top: 250px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.zagolovok {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.history-text h2 {
+    color: #ffffff;
+    font-family: 'Russo one';
+    font-size: 60px;
+    text-transform: uppercase;
+    transform: scaleY(1.7);
+}
+
+.history-text p {
+    color: #F4F4F4;
+    font-family: 'Montseratt';
+    font-size: 20px;
+
+}
+
+.goda hr {
+    width: 1300px;
+    color: #ffffff;
+    margin-top: 350px;
+}
+
+.gora {
+    padding-top: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cola {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 19px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.data h3 {
+    font-family: 'Orbitron bold';
+    font-size: 40px;
+}
+
+.data h4 {
+    font-family: 'Orbitron bold';
+    font-size: 24px;
+}
+
+.cola p {
+    font-size: 16px;
+    font-family: 'Montseratt';
+}
+
+.odin,
+.dva,
+.tre {
+    width: 20px;
+    height: 20px;
+    background-color: #A2021E;
+}
+
+.kvadrat {
+    position: relative;
+}
+
+.odin {
+    position: absolute;
+    top: -236px;
+}
+
+.dva {
+    position: absolute;
+    top: -236px;
+    left: 476px;
+}
+
+.tre {
+    position: absolute;
+    top: -236px;
+    left: 959px;
+}
+
+/* конец истории */
+
+
+/* начало комплектации */
+.article-block {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-bottom: 73px;
+}
+
+.article-text h2 {
+    color: #0066CC;
+    font-family: 'Russo one';
+    font-size: 50px;
+    transform: scaleY(1.6);
+    text-transform: uppercase;
+}
+
+.article-text h3 {
+    font-size: 32px;
+    font-family: 'Montseratt';
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.voda h4 {
+    font-family: 'M Bold';
+    color: #DEDEDE;
+    font-size: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.activ h4 {
+    color: #0066CC;
+}
+
+.haracter {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    align-items: end;
+    padding-top: 74px;
+}
+
+.tea {
+    display: flex;
+    gap: 34px;
+}
+
+.tea p {
+    font-size: 20px;
+    font-family: 'Montseratt';
+}
+
+.alin {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.kat {
+    color: #8B8B8B;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.kryg1, .kryg2 , .kryg3 , .kryg4, .kryg5, .kryg6, .kryg7 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #0066CC;
+    cursor: pointer;
+}
+
+.krygi {
+    position: relative;
+}
+
+.krygi h2 {
+    padding-bottom: 5px;
+}
+
+
+.kryg1 {
+    position: absolute;
+    bottom: 260px;
+    right: 220px;
+    width: 15px;
+    height: 15px;
+    background: #0066CC;
+    border-radius: 50%;
+}
+
+.opisn {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    width: 200px;
+    height: 80px;
+    background: #0066CC;
+    color: white;
+    border-radius: 15px;
+    padding:  18px 0 0 20px;
+    font-size: 11px;
+    font-family: 'Montseratt';
+}
+
+.kryg1:hover .opisn {
+    display: block;
+}
+
+.kryg2 {
+    position: absolute;
+    bottom: 280px;
+    right: 160px;
+    width: 15px;
+    height: 15px;
+    background: #0066CC;
+    border-radius: 50%;
+}
+
+.opisn2 {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    width: 200px;
+    height: 80px;
+    background: #0066CC;
+    color: white;
+    border-radius: 15px;
+    padding:  18px 0 0 18px;
+    font-size: 11px;
+    font-family: 'Montseratt';
+}
+
+.kryg2:hover .opisn2 {
+    display: block;
+}
+
+.kryg3 {
+    position: absolute;
+    bottom: 250px;
+    right: 330px;
+    width: 15px;
+    height: 15px;
+    background: #0066CC;
+    border-radius: 50%;
+}
+
+.opisn3 {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    width: 200px;
+    height: 80px;
+    background: #0066CC;
+    color: white;
+    border-radius: 15px;
+    padding:  18px 0 0 18px;
+    font-size: 11px;
+    font-family: 'Montseratt';
+}
+
+.kryg3:hover .opisn3 {
+    display: block;
+}
+
+.kryg4 {
+    position: absolute;
+    bottom: 130px;
+    right: 420px;
+    width: 15px;
+    height: 15px;
+    background: #0066CC;
+    border-radius: 50%;
+}
+
+.opisn4 {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    width: 200px;
+    height: 80px;
+    background: #0066CC;
+    color: white;
+    border-radius: 15px;
+    padding:  18px 0 0 15px;
+    font-size: 11px;
+    font-family: 'Montseratt';
+}
+
+.kryg4:hover .opisn4 {
+    display: block;
+}
+
+.kryg5 {
+    position: absolute;
+    bottom: 100px;
+    right: 170px;
+    width: 15px;
+    height: 15px;
+    background: #0066CC;
+    border-radius: 50%;
+}
+
+.opisn5 {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    width: 200px;
+    height: 80px;
+    background: #0066CC;
+    color: white;
+    border-radius: 15px;
+    padding:  18px 0 0 18px;
+    font-size: 11px;
+    font-family: 'Montseratt';
+}
+
+.kryg5:hover .opisn5 {
+    display: block;
+}
+
+.kryg6 {
+    position: absolute;
+    bottom: 115px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background: #0066CC;
+    border-radius: 50%;
+}
+
+.opisn6 {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    width: 200px;
+    height: 80px;
+    background: #0066CC;
+    color: white;
+    border-radius: 15px;
+    padding:  18px 0 0 15px;
+    font-size: 11px;
+    font-family: 'Montseratt';
+}
+
+.kryg6:hover .opisn6 {
+    display: block;
+}
+
+.kryg7 {
+    position: absolute;
+    bottom: 150px;
+    left: 450px;
+    width: 15px;
+    height: 15px;
+    background: #0066CC;
+    border-radius: 50%;
+}
+
+.opisn7 {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    width: 200px;
+    height: 80px;
+    background: #0066CC;
+    color: white;
+    border-radius: 15px;
+    padding:  18px 0 0 15px;
+    font-size: 11px;
+    font-family: 'Montseratt';
+}
+
+.kryg7:hover .opisn7 {
+    display: block;
+}
+
+/* конец комплектации */
+
+
+/* начало вопросы */
+.voprosi {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pol {
+    width: 682px;
+    border: 1px solid white;
+}
+
+.start h2 {
+    font-family: 'Russo one';
+    color: #dfdfdf;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.start h3 {
+    font-family: 'Russo one';
+    color: #dfdfdf;
+    font-size: 28px;
+}
+
+.krem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nazvanie h2{
+    padding-top: 95px;
+    font-family: 'Russo one';
+    color: #DBDBDB;
+    font-size: 65px;
+    transform: scaleY(1.3);
+    text-transform: uppercase;
+}
+
+.nazvanie h3{
+    padding-top: 15px;
+    font-family: 'Russo one';
+    color: #FFFFFF;
+    font-size: 70px;
+    transform: scaleY(1.5);
+    text-transform: uppercase;
+}
+
+.vopros-text p{
+    color: #DCD8D8;
+    font-size: 24px;
+    font-family: 'Montseratt';
+    width: 600px;
+    padding: 30px 0;
+}
+
+
+form {
+    width: 600px;
+}
+
+
+input[type="text"]{
+    width: 600px;
+    height: 80px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-bottom: 17px;
+    color: #A3A3A3;
+    font-size: 18px;
+    font-family: 'Montseratt';
+    padding-left: 33px;
+}
+
+textarea{
+    height: 135px;
+    width: 600px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+     color: #A3A3A3;
+    font-size: 18px;
+    font-family: 'Montseratt';
+    padding-left: 33px;
+    padding-top: 31px;
+    margin-bottom: 35px;
+}
+
+label {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Montseratt';
+}
+
+
+
+button[type="submit"]{
+    width: 600px;
+    height: 65px;
+    background-color: transparent;
+    border: 1px solid #CD0A2C;
+    border-radius: 8px;
+    color: #E4E4E4;
+    font-size: 18px;
+    font-family: 'Montseratt';
+    text-transform: uppercase;
+   margin-top: 37px;
+   cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: #CD0A2C;
+    border: 1px solid #CD0A2C;
+}
+
+.bm img {
+    width: 500px;
+    margin: 20px 0;
+}
+
+.kontact {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontact h3 {
+    font-size:24px;
+    color: #FFFFFF;
+    font-family: 'Montseratt';
+    padding-bottom: 25px;
+}
+
+.phone img {
+width: 27px;
+}
+
+.mail img {
+width: 36px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.kontact a {
+    color: #D5D5D5;
+    font-size: 18px;
+    font-family: 'Montseratt';
+}
+
+label a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+
+/* конец вопросы */
+
+
+/* начало подвала */
+.footer-block {
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navig {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.navig h2 , .svaz h2 , .sot-seti h2{
+    padding-bottom: 10px;
+    color: #E5E5E5;
+    font-family: 'Montseratt';
+    font-size: 18px;
+}
+
+.navig a , .svaz a{
+    color: #CFCFCF;
+    font-family: 'Montseratt';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navig a:hover {
+    transform: scale(1.1);
+}
+
+
+
+.svaz {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.svaz img {
+    width: 19px;
+    height: 19px;
+}
+
+.phone2 , .mail2 {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
+
+.sot-seti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.seti {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.seti img:hover {
+    transform: scale(1.1);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 77px;
+}
+
+
+.footer-konec {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer-konec p {
+    color: #AFAFAF;
+     font-family: 'Montseratt';
+    font-size: 16px;
+}
+
+.kok{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.logo2 img {
+    width: 208px;
+}
+
+
+
+/* конец подвала */
